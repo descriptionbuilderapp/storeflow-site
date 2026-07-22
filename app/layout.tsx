@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   },
   description:
     "StoreFlow is a wholesale operations platform for Shopify.",
+  icons: {
+    icon: "/storeflow-icon.png",
+    shortcut: "/storeflow-icon.png",
+    apple: "/storeflow-icon.png",
+  },
 };
 
 export default function RootLayout({
