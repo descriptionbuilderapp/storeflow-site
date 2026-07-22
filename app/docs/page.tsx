@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Documentation",
@@ -6,12 +7,36 @@ export const metadata: Metadata = {
 };
 
 const docs = [
-  ["Getting started", "Install, configure, and verify StoreFlow."],
-  ["Minimum Order", "Set cart-value requirements for wholesale orders."],
-  ["MOQ Rules", "Configure product, variant, and collection minimum quantities."],
-  ["Hide Prices", "Control storefront pricing and purchasing access."],
-  ["Quick Order", "Configure the streamlined wholesale ordering experience."],
-  ["Release notes", "Review current features, improvements, and fixes."],
+  {
+    title: "Getting started",
+    description: "Install, configure, and verify StoreFlow.",
+    href: "/docs/getting-started",
+  },
+  {
+    title: "Minimum Order",
+    description: "Set cart-value requirements for wholesale orders.",
+    href: "/docs/minimum-order",
+  },
+  {
+    title: "MOQ Rules",
+    description: "Configure product, variant, and collection minimum quantities.",
+    href: "/docs/moq-rules",
+  },
+  {
+    title: "Hide Prices",
+    description: "Control storefront pricing and purchasing access.",
+    href: "/docs/hide-prices",
+  },
+  {
+    title: "Quick Order",
+    description: "Configure the streamlined wholesale ordering experience.",
+    href: "/docs/quick-order",
+  },
+  {
+    title: "Release notes",
+    description: "Review current features, improvements, and fixes.",
+    href: "/docs/release-notes",
+  },
 ];
 
 export default function DocsPage() {
@@ -25,23 +50,24 @@ export default function DocsPage() {
           Learn how to use StoreFlow
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-600">
-          Documentation is being prepared for the public release. The initial
-          guide structure is available below.
+          Follow the setup guide, review feature instructions, and check the
+          latest release notes.
         </p>
       </div>
 
       <div className="mt-14 grid gap-6 md:grid-cols-2">
-        {docs.map(([title, description]) => (
-          <article
-            key={title}
-            className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
+        {docs.map((doc) => (
+          <Link
+            key={doc.title}
+            href={doc.href}
+            className="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md"
           >
-            <h2 className="text-xl font-semibold text-slate-950">{title}</h2>
-            <p className="mt-3 leading-7 text-slate-600">{description}</p>
-            <p className="mt-5 text-sm font-semibold text-emerald-700">
-              Guide coming soon
+            <h2 className="text-xl font-semibold text-slate-950">{doc.title}</h2>
+            <p className="mt-3 leading-7 text-slate-600">{doc.description}</p>
+            <p className="mt-5 text-sm font-semibold text-emerald-700 transition group-hover:text-emerald-800">
+              Read guide →
             </p>
-          </article>
+          </Link>
         ))}
       </div>
     </div>
