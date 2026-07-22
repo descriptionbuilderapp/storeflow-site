@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StoreFlow Website
 
-## Getting Started
+Official website and documentation repository for **StoreFlow**.
 
-First, run the development server:
+## About StoreFlow
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**StoreFlow is a wholesale operations platform for Shopify.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It helps Shopify wholesale merchants manage purchasing rules, customer access, price visibility, and wholesale ordering workflows from one unified platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+StoreFlow is designed to simplify wholesale operations while remaining easy to configure, reliable, and scalable.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Current Status
 
-To learn more about Next.js, take a look at the following resources:
+**Internal Beta**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+StoreFlow has completed its core development and is currently focused on productization, documentation, legal compliance, and Shopify App Store launch preparation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Product Areas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Order Policies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Manage purchasing rules across your wholesale business.
+
+- Minimum Order
+- Product MOQ
+- Variant MOQ
+- Collection MOQ
+- Saved Rule Sets
+
+---
+
+### Customer Access
+
+Control who can view prices and purchase products.
+
+- Customer Tag Rules
+- Hide Prices
+- Hide Add to Cart
+- Hide Buy Now
+- Optional Checkout Block
+
+---
+
+### Purchasing Experience
+
+Create a better wholesale ordering experience.
+
+- Quick Order
+- Checkout Validation
+
+---
+
+### Operations
+
+Manage and monitor your wholesale configuration.
+
+- Dashboard
+
+---
+
+## Documentation
+
+Documentation is currently being prepared.
+
+Planned documentation includes:
+
+- Getting Started
+- Feature Guides
+- FAQ
+- Release Notes
+
+---
+
+## Support
+
+Support documentation is currently under development.
+
+---
+
+## Legal
+
+The following documents will be available before public release:
+
+- Privacy Policy
+- Terms of Service
+- Support Policy
+
+---
+
+## Website
+
+The official website will be published before the Shopify App Store launch.
+
+---
+
+© StoreFlow. All rights reserved.
