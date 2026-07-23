@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+export const metadata: Metadata = { title: "FAQ", description: "StoreFlow Internal Beta, capacity, compatibility, pricing, and support questions." };
+const faqs = [
+["Is StoreFlow designed for enterprise stores?","StoreFlow is currently designed for small and growing Shopify wholesale businesses. Enterprise-scale catalogs, high concurrency, SLA requirements, and guaranteed-capacity environments require additional validation."],
+["How many variants are recommended?","During Internal Beta, StoreFlow is conservatively recommended for stores with up to 1,000 active variants. This is onboarding guidance, not a guaranteed technical maximum."],
+["How many products are recommended in one cart?","Up to 50 distinct products per cart is the current recommended Internal Beta range. Larger carts require additional validation."],
+["How many MOQ or Hide Price rules are recommended?","Each rule library is generally recommended around 25 active rules during Internal Beta. Larger libraries require additional validation."],
+["How many products or collections can I select?","Up to 50 manually selected products and up to 20 selected collections are the current onboarding recommendations. Larger collection configurations require review and should remain below 50 in the current version."],
+["Does StoreFlow support headless storefronts?","Headless storefronts are not currently part of the recommended Internal Beta environment and require separate evaluation."],
+["Does StoreFlow work with every Shopify theme?","StoreFlow is designed for Shopify Online Store 2.0 themes, with Dawn and lightly customized themes preferred. Custom themes, carts, and third-party purchase controls may require compatibility testing."],
+["Does StoreFlow guarantee every invalid order will be blocked?","No universal enforcement guarantee is provided. Merchants must test their storefront, cart, checkout, theme, customer tags, catalog, and installed apps before production reliance."],
+["Are Minimum Order and MOQ paid features?","They are currently included at no additional charge during Internal Beta. Pricing, packaging, and availability may change as validation continues."],
+["What happens if my store exceeds the recommended range?","The store may still function, but larger configurations require additional validation. Contact support before relying on StoreFlow in production."],
+["Does StoreFlow provide an SLA?","StoreFlow does not currently provide a formal SLA, guaranteed response time, guaranteed uptime, or guaranteed capacity."],
+["How many merchants can use StoreFlow at the same time?","A fixed number is not published. Multi-merchant concurrency remains under validation, and current guidance assumes low-to-moderate traffic and limited concurrent merchant activity."],
+["Will support modify my theme or another app?","Standard support does not include custom theme development, custom checkout work, third-party app code changes, or complex multi-app integration engineering."],
+] as const;
+export default function FaqPage(){return <div className="mx-auto max-w-4xl px-6 py-20 lg:py-24"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">FAQ</p><h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">Common questions</h1><p className="mt-5 text-lg leading-8 text-slate-600">Current answers reflect StoreFlow&apos;s controlled Internal Beta stage.</p><div className="mt-12 space-y-5">{faqs.map(([q,a])=><section key={q} className="rounded-2xl border border-slate-200 bg-white p-7"><h2 className="text-xl font-semibold text-slate-950">{q}</h2><p className="mt-3 leading-8 text-slate-600">{a}</p></section>)}</div><p className="mt-10 text-slate-600">Need help evaluating your store? <Link href="/support" className="font-semibold text-emerald-700">Contact support →</Link></p></div>}

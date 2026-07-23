@@ -17,8 +17,7 @@ export default function MinimumOrderGuide() {
         Minimum Order
       </h1>
       <p className="mt-5 text-lg leading-8 text-slate-600">
-        Create minimum purchase requirements for the entire cart, selected
-        products, variants, or collections.
+        Create minimum purchase requirements for the entire cart, selected products, variants, or collections. This feature is included at no additional charge during Internal Beta.
       </p>
 
       <div className="mt-12 space-y-9 leading-8 text-slate-700">
@@ -53,9 +52,13 @@ export default function MinimumOrderGuide() {
         <section className="rounded-2xl border border-amber-200 bg-amber-50 p-7">
           <h2 className="text-2xl font-semibold text-slate-950">Test before launch</h2>
           <p className="mt-3">
-            Test a cart below the minimum, a cart that passes, and customer
-            accounts with and without the configured tags.
+            Test a cart below the minimum, a cart that passes, and customer accounts with and without the configured tags. StoreFlow is intended to assist with storefront order enforcement and does not guarantee that every non-compliant order will be prevented in every customized environment.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-slate-950">Current Internal Beta guidance</h2>
+          <p className="mt-3">Carts containing up to 50 distinct products are within the current recommended onboarding range. Larger carts require additional validation.</p>
         </section>
       </div>
     </article>

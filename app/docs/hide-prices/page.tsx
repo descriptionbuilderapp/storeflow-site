@@ -17,7 +17,7 @@ export default function HidePricesGuide() {
         Hide Prices
       </h1>
       <p className="mt-5 text-lg leading-8 text-slate-600">
-        Control which customers can see prices and purchase selected products.
+        Control which customers can see prices and purchase selected products. Hide Prices is a paid core StoreFlow feature.
       </p>
 
       <div className="mt-12 space-y-9 leading-8 text-slate-700">
@@ -53,9 +53,15 @@ export default function HidePricesGuide() {
         <section className="rounded-2xl border border-amber-200 bg-amber-50 p-7">
           <h2 className="text-2xl font-semibold text-slate-950">Test customer access</h2>
           <p className="mt-3">
-            Test as a guest, an approved tagged customer, and a customer without
-            the required tags.
+            Test as a guest, an approved tagged customer, and a customer without the required tags. Also verify product pages, collections, search results, cart pages, cart drawers, purchase controls, and checkout behavior where applicable.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-slate-950">Compatibility and rule guidance</h2>
+          <p className="mt-3">Dawn and lightly customized Online Store 2.0 themes are preferred. Theme-specific price elements and third-party purchase controls may require compatibility testing.</p>
+          <p className="mt-3">Hide Price rule libraries are generally recommended around 25 active rules during Internal Beta. Larger libraries require additional validation.</p>
+          <p className="mt-3">StoreFlow does not guarantee absolute hiding of every custom or third-party price element.</p>
         </section>
       </div>
     </article>

@@ -17,8 +17,7 @@ export default function MoqRulesGuide() {
         MOQ Rules
       </h1>
       <p className="mt-5 text-lg leading-8 text-slate-600">
-        Build reusable product, variant, and collection minimum-quantity rules,
-        then activate them through saved rule sets.
+        Build reusable product, variant, and collection minimum-quantity rules, then activate them through saved rule sets. MOQ Rules are included at no additional charge during Internal Beta.
       </p>
 
       <div className="mt-12 space-y-9 leading-8 text-slate-700">
@@ -61,6 +60,12 @@ export default function MoqRulesGuide() {
             Test each saved rule set separately, then test combinations of
             enabled sets with related and unrelated products.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-slate-950">Current Internal Beta guidance</h2>
+          <p className="mt-3">MOQ rule libraries are generally recommended around 25 active rules, and carts are recommended up to 50 distinct products. Larger configurations require additional validation.</p>
+          <p className="mt-3">Merchants should verify rule behavior with their own theme, cart, checkout, customer tags, catalog, and installed apps before production reliance.</p>
         </section>
       </div>
     </article>
